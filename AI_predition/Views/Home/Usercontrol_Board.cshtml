@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "لوحة التحكم للمستخدم";
+    Layout = "~/Views/Shared/_UseControlBoardLayout.cshtml";
+}
+
+
+<body>
+
+    <!-- <body data-layout="horizontal"> -->
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+ 
+
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card"> 
+                                    <div class="card-header">
+                                        <h4 class="card-title mb-0">مؤشر الاسهم </h4>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <div id="line_chart_datalabel" data-colors='["#5156be", "#2ab57d"]' class="apex-charts" dir="ltr"></div>                              
+                                    </div>
+                                </div><!--end card-->
+                            </div>
+
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title mb-0"> اسعار الأسهم </h4>
+                                    </div>
+                                    <div class="card-body">
+                                        
+                                        <div id="line_chart_dashed" data-colors='["#5156be", "#fd625e", "#2ab57d"]' class="apex-charts" dir="ltr"></div>        
+                                    </div>
+                                </div><!--end card-->
+                            </div>
+                        </div>
+                        </div>
+                        <!-- end row -->
+
+        
+    
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- JAVASCRIPT -->
+        <script src="~/AdminAssets/libs/jquery/jquery.min.js"></script>
+        <script src="~/AdminAssets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="~/AdminAssets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="~/AdminAssets/libs/simplebar/simplebar.min.js"></script>
+        <script src="~/AdminAssets/libs/node-waves/waves.min.js"></script>
+        <script src="~/AdminAssets/libs/feather-icons/feather.min.js"></script>
+        <!-- pace js -->
+        <script src="~/AdminAssets/libs/pace-js/pace.min.js"></script>
+
+        <!-- apexcharts js -->
+        <script src="~/AdminAssets/libs/apexcharts/apexcharts.min.js"></script>
+
+        <!-- apexcharts init -->
+        <script src="~/AdminAssets/js/pages/apexcharts.init.js"></script>
+
+        <script src="~/AdminAssets/js/app.js"></script>
+
+    </body>
